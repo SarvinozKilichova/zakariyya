@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="uz">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Obuna Bo'lish</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .header {
+                padding-top: 0px;
+                padding-bottom: 0px;
+                background-color: #ebe8e3;
+                min-height: 100vh;
+                padding-top: 180px;
+            }
+
+            .header-container {
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 671px;
+                width: 100%;
+                display: flex;
+                background-repeat: no-repeat;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .hero-left {
+                max-width: 903px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero-title {
+                font-family: "Bebas Neue", sans-serif;
+                font-weight: 700;
+                font-size: 96px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                text-align: center;
+                margin-bottom: 25px;
+                text-transform: uppercase;
+                max-width: 622px;
+            }
+
+            .hero-text {
+                font-family: "Montserrat", sans-serif;
+                font-weight: 500;
+                font-size: clamp(17px ,5vw, 29px);
+                line-height: 150%;
+                letter-spacing: 0%;
+                margin-bottom: 58px;
+                max-width: 522px;
+            }
+
+            .hero-text>a {
+                color: #ff0000;
+                text-decoration: none;
+            }
+
+            .hero-btn-box {
+                max-width: 585px;
+                width: 100%;
+            }
+
+            .hero-img {
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 46px;
+                display: flex;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: "Bebas Neue", sans-serif;
+                font-weight: 700;
+                font-size: 64px;
+                line-height: 100%;
+                text-align: center;
+                padding: 39px 0px 38px 0px;
+                background-color: #039BE5;
+                box-shadow: 0px 5px 0px 0px #006393;
+                color: white;
+                border-radius: 30px;
+                max-width: 585px;
+                width: 100%;
+                border: none;
+                text-transform: uppercase;
+                margin-bottom: 42px;
+                text-decoration: none;
+                max-height: 142px;
+            }
+
+            .hero-box {
+                padding: 0 35px 0 20px;
+                border-radius: 10px;
+                border: 1px solid #bcbcbc;
+                background-color: #fff;
+                max-width: 585px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+            }
+
+            .hero-box-text {
+                font-family: "Montserrat", sans-serif;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 100%;
+                letter-spacing: 0%;
+            }
+
+            .img {
+                display: none;
+            }
+
+            .hero-box-img {
+                width: 70px;
+                min-height: 70px;
+            }
+
+            @media (max-width: 500px) {
+                .header {
+                    padding-top: 30%;
+                    padding-bottom: 0px;
+                    background-image: none;
+                }
+
+                .hero-left {
+                    display: block;
+                }
+
+                .header-container {
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+
+                .hero-title {
+                    font-weight: 700;
+                    font-size: 40px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    text-align: center;
+                    margin-bottom: 5px;
+                }
+
+                .hero-img {
+                    margin-bottom: 24px;
+                    height: 69px;
+                }
+
+                .hero-btn {
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    text-align: center;
+                    padding: 23px 0px 20px 0px;
+                    border-radius: 30px;
+                    max-width: 345px;
+                    width: 100%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 25px;
+                }
+
+                .hero-box {
+                    padding: 5px 10px 10px 9px;
+                    border-radius: 10px;
+                    text-align: left;
+                    max-width: 372px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                .hero-box-img {
+                    max-width: 41px;
+                    width: 41px;
+                    min-width: 41px;
+                    height: auto;
+                    object-fit: contain;
+                    min-height: 40px;
+                }
+
+                .hero-box-text {
+                    font-weight: 600;
+                    font-size: 11px;
+                    line-height: 130%;
+                    letter-spacing: 0%;
+                    padding-top: 3px;
+                    padding-bottom: 2px;
+                }
+
+                .img {
+                    display: flex;
+                    max-width: 632px;
+                    width: 100%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 100%;
+                    object-fit: cover;
+                    height: auto;
+                }
+            }
+
+            .footer {
+                padding-top: 25px;
+                padding-bottom: 25px;
+                background-color: black;
+            }
+
+            .footer__container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .footer__link {
+                color: white;
+                font-size: 16px;
+                font-weight: 400;
+                font-family: sans-serif;
+                text-decoration: none;
+                b {
+                    font-weight: 700;
+                    text-decoration: underline;
+                }
+            }
+        </style>
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Bebas+Neue" as="style"/>
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700" as="style"/>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet"/>
+    </head>
+    <body>
+        <section class="header">
+            <div class="header-container">
+                <div class="hero-left">
+                    <h2 class="hero-title">oxirgi qadam qoldi!</h2>
+                    <p class="hero-text">
+                        Kurs haqida ma'lumot olish uchun <br>
+                        Telegram kanalga <span style="color: #ff0000;">obuna bo'ling</span>
+                    </p>
+                    <div class="hero-btn-box">
+                        <img class="hero-img" src="images/strelka.svg" alt="Arrow icon"/>
+                        <a href="https://t.me/ustoz_zakariyya" class="hero-btn thankYouBtn">obuna bo’lish</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script defer src="./js/thankYou.js"></script>
+    </body>
+</html>
