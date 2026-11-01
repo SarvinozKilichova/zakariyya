@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   // ⚠️  | Leads baza spreadsheet'ining Apps Script URL'i.
   // /1/js/app.js bilan BIR XIL bo'lishi kerak (ikkala sayt ham shu spreadsheet'ga yozadi).
-  const SHEETS_URL = "https://script.google.com/macros/s/AKfycbz1Q7fxWjIvdOghIkeEz0ioXwfJtr3F6rlhnznD7z0B02J-BghHqAJMsuZuFVfzmErBzA/exec";
+  const SHEETS_URL = "http://127.0.0.1:8000/api/v1/forms/crm_khnbcl43_6511OThhNmSNVJ0nN_WvToeUf0pjEN8t5HjitCOyoqA/";
   const SHEET_NAME = "ustoz_zakariyya";
   const REDIRECT_URL = "thankYou.html";
 
